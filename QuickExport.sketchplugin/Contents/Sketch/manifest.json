@@ -1,0 +1,47 @@
+{
+  "author" : "Richard Gazdik",
+  "commands" : [
+    {
+      "script" : "QuickExportAll.js",
+      "handler" : "onRun",
+      "shortcut" : "ctrl shift e",
+      "name" : "Quick Export @1-3x",
+      "identifier" : "quick-export-all"
+    },
+    {
+      "script" : "QuickExport1x.js",
+      "handler" : "onRun",
+      "name" : "Quick Export @1x",
+      "identifier" : "quick-export-1x"
+    },
+    {
+      "script" : "QuickExport2x.js",
+      "handler" : "onRun",
+      "name" : "Quick Export @2x",
+      "identifier" : "quick-export-2x"
+    },
+    {
+      "script" : "QuickExport3x.js",
+      "handler" : "onRun",
+      "name" : "Quick Export @3x",
+      "identifier" : "quick-export-3x"
+    }
+  ],
+  "menu" : {
+    "items" : [
+        "quick-export-1x",
+        "quick-export-2x",
+        "quick-export-3x",
+        "quick-export-all"
+    ],
+    "title" : "Quick Export"
+  },
+  "identifier" : "com.richardgazdik.sketch-plugin",
+  "description": "Exports selected layers as pngs to a specified folder.",
+  "authorEmail" : "richard@gazdik.name",
+  "name" : "Quick Export",
+  "homepage": "http://richard.gazdik.name",
+  "version": "0.6",
+  "compatibleVersion": 3.5,
+  "bundleVersion": 1
+}
