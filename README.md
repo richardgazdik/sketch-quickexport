@@ -1,10 +1,10 @@
 # sketch-quickexport 0.6
-Quick Export Plugin For Sketch
+Quick Export as PNG Plugin For Sketch
 
 ## Quick export selected layers
 
 Export one or more selected symbols/layers/artboards in a document to a specified folder.
-You can export the selected layers in original, 2x, and 3x resolutions.
+You can export the selected layers as PNG in original, 2x, and 3x resolutions.
 
 ## Installation
 
