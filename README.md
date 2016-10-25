@@ -10,6 +10,8 @@ You can export the selected layers in original, 2x, and 3x resolutions.
 
 Drop QuickExport.sketchplugin into your **Sketch plugins folder** (Plugins > Reveal Plugins Folder to find it).
 
-## Shortcut
+## Usage
 
-*`ctrl` + `shift` +* **`e`**
+1. Hit *`Ctrl` + `Shift` +* **`E`** to export the selected layers @1x, @2x and @3x resolutions.
+2. Select a folder to export.
+3. You're done.
