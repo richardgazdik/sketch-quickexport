@@ -4,16 +4,29 @@ var onRun = function(context) {
 	var doc = context.document;
     var selection = context.selection;
     var file_path = selectFolder();
-    for(var i = 0; i < selection.count(); i++){
+    
+    for(var i = 0; i < selection.count(); i++) {
         var s = selection[i];
         var sName = s.name();
-        var rect  = [MSSliceTrimming trimmedRectForSlice:s];
-        var slice = [MSExportRequest requestWithRect:rect scale:1];
-        var slice2x = [MSExportRequest requestWithRect:rect scale:2];
-        var slice3x = [MSExportRequest requestWithRect:rect scale:3];
-        doc.saveArtboardOrSlice_toFile(slice,file_path+"/"+sName+".png");
-        doc.saveArtboardOrSlice_toFile(slice2x,file_path+"/"+sName+"@2x.png");
-        doc.saveArtboardOrSlice_toFile(slice3x,file_path+"/"+sName+"@3x.png");
+        var fileNames = [];
+        
+        var c = s.duplicate();
+        c.exportOptions().removeAllExportFormats();
+        for (var e=1; e<=3; e++) {
+            var exportOption = c.exportOptions().addExportFormat();
+            exportOption.setScale(e);
+            exportOption.setName("@"+e+"x");
+            var prefix = e > 1 ? "@"+e+"x" : "";
+            var fileName= file_path + "/" + sName + prefix + ".png";
+            fileNames.push(fileName);
+        }
+        
+        var slices = MSExportRequest.exportRequestsFromExportableLayer(c);
+        for (var j=0; j < slices.count(); j++) {
+            [doc saveArtboardOrSlice:slices[j] toFile:fileNames[j]];
+        }
+        c.removeFromParent();
+        doc.currentPage().deselectAllLayers();
     }
 }
 

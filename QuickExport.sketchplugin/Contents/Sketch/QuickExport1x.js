@@ -1,15 +1,28 @@
-@import 'common.js'
-
 var onRun = function(context) {
 	var doc = context.document;
     var selection = context.selection;
     var file_path = selectFolder();
-    for(var i = 0; i < selection.count(); i++){
+    
+    for(var i = 0; i < selection.count(); i++) {
         var s = selection[i];
         var sName = s.name();
-        var rect  = [MSSliceTrimming trimmedRectForSlice:s];
-        var slice = [MSExportRequest requestWithRect:rect scale:1];
-        doc.saveArtboardOrSlice_toFile(slice,file_path+"/"+sName+".png");
+        var fileNames = [];
+        
+        var c = s.duplicate();
+        c.exportOptions().removeAllExportFormats();
+        var exportOption = c.exportOptions().addExportFormat();
+        exportOption.setScale(1);
+        exportOption.setName("@1x");
+        
+        var fileName= file_path + "/" + sName + ".png";
+        fileNames.push(fileName);
+        
+        var slices = MSExportRequest.exportRequestsFromExportableLayer(c);
+        for (var j=0; j < slices.count(); j++) {
+            [doc saveArtboardOrSlice:slices[j] toFile:fileNames[j]];
+        }
+        c.removeFromParent();
+        doc.currentPage().deselectAllLayers();
     }
 }
 
