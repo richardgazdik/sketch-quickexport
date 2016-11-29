@@ -9,6 +9,13 @@
       "identifier" : "quick-export-all"
     },
     {
+      "script" : "QuickExportPDF.js",
+      "handler" : "onRun",
+      "shortcut" : "cmd p",
+      "name" : "Quick Export PDF",
+      "identifier" : "quick-export-PDF"
+    },
+    {
       "script" : "QuickExport1x.js",
       "handler" : "onRun",
       "name" : "Quick Export @1x",
@@ -32,7 +39,8 @@
         "quick-export-1x",
         "quick-export-2x",
         "quick-export-3x",
-        "quick-export-all"
+        "quick-export-all",
+        "quick-export-PDF"
     ],
     "title" : "Quick Export"
   },
@@ -41,7 +49,7 @@
   "authorEmail" : "richard@gazdik.name",
   "name" : "Quick Export",
   "homepage": "http://richard.gazdik.name",
-  "version": "0.6",
+  "version": "0.7",
   "compatibleVersion": 3.5,
   "bundleVersion": 1
 }
