@@ -49,7 +49,7 @@
   "authorEmail" : "richard@gazdik.name",
   "name" : "Quick Export",
   "homepage": "http://richard.gazdik.name",
-  "version": "0.7",
+  "version": "0.8",
   "compatibleVersion": 3.5,
   "bundleVersion": 1
 }
