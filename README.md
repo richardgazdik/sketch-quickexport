@@ -1,4 +1,4 @@
-# sketch-quickexport 0.7
+# sketch-quickexport 0.8
 Quick Export as PNG Plugin For Sketch
 
 ## Quick export selected layers
@@ -17,5 +17,6 @@ Drop QuickExport.sketchplugin into your **Sketch plugins folder** (Plugins > Rev
 3. You're done.
 
 ## Version History
+* 0.8 (Jan 11, 2017) - PDF export (Thanks to [ober1](https://github.com/ober01))
 * 0.7 (October 26, 2016) - PNG transparency support
 * 0.6 (October 25, 2016) - First public release
