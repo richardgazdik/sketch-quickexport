@@ -12,7 +12,7 @@ Drop QuickExport.sketchplugin into your **Sketch plugins folder** (Plugins > Rev
 
 ## Usage
 
-1. Hit *`fn` + `Shift` +**`A`** to export the selected layers @1x, @2x and @3x resolutions.
+1. Hit `fn` + `Shift` +**`A`** to export the selected layers @1x, @2x and @3x resolutions.
 2. Select a folder to export.
 3. You're done.
 
