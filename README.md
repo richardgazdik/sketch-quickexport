@@ -1,5 +1,5 @@
 # sketch-quickexport 0.9
-Quick Export as PNG Plugin For Sketch
+Quick Export Plugin For Sketch
 
 ## Quick export selected layers
 
@@ -12,17 +12,17 @@ Drop QuickExport.sketchplugin into your **Sketch plugins folder** (Plugins > Rev
 
 ## Usage
 
-1. Hit *`fn` + `Shift` +* **`A`** to export the selected layers @1x, @2x and @3x resolutions.
+1. Hit *`fn` + `Shift` +**`A`** to export the selected layers @1x, @2x and @3x resolutions.
 2. Select a folder to export.
 3. You're done.
 
 ## Shortcuts
-* `fn` + `Shift` +* **`A`** to export the selected layers @1x, @2x and @3x resolutions.
-* `fn` + `Shift` +* **`1`** to export the selected layers @1x resolution.
-* `fn` + `Shift` +* **`2`** to export the selected layers @2x resolution.
-* `fn` + `Shift` +* **`3`** to export the selected layers @3x resolution.
-* `fn` + `Shift` +* **`S`** to export the selected layers to SVG.
-* `fn` + `Shift` +* **`P`** to export the selected layers to PDF.
+* `fn` + `Shift` +**`A`** to export the selected layers @1x, @2x and @3x resolutions.
+* `fn` + `Shift` +**`1`** to export the selected layers @1x resolution.
+* `fn` + `Shift` +**`2`** to export the selected layers @2x resolution.
+* `fn` + `Shift` +**`3`** to export the selected layers @3x resolution.
+* `fn` + `Shift` +**`S`** to export the selected layers to SVG.
+* `fn` + `Shift` +**`P`** to export the selected layers to PDF.
 
 ## Version History
 * 0.9 (Jan 19, 2017) - SVG export, extended and unified shortcuts
