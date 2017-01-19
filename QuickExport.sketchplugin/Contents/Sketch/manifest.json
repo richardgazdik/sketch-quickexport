@@ -2,36 +2,46 @@
   "author" : "Richard Gazdik",
   "commands" : [
     {
-      "script" : "QuickExportAll.js",
-      "handler" : "onRun",
-      "shortcut" : "ctrl shift e",
-      "name" : "Quick Export @1-3x",
-      "identifier" : "quick-export-all"
-    },
-    {
-      "script" : "QuickExportPDF.js",
-      "handler" : "onRun",
-      "shortcut" : "cmd p",
-      "name" : "Quick Export PDF",
-      "identifier" : "quick-export-PDF"
-    },
-    {
       "script" : "QuickExport1x.js",
       "handler" : "onRun",
+      "shortcut" : "fn shift 1",
       "name" : "Quick Export @1x",
       "identifier" : "quick-export-1x"
     },
     {
       "script" : "QuickExport2x.js",
       "handler" : "onRun",
+      "shortcut" : "fn shift 2",
       "name" : "Quick Export @2x",
       "identifier" : "quick-export-2x"
     },
     {
       "script" : "QuickExport3x.js",
       "handler" : "onRun",
+      "shortcut" : "fn shift 3",
       "name" : "Quick Export @3x",
       "identifier" : "quick-export-3x"
+    },
+    {
+      "script" : "QuickExportAll.js",
+      "handler" : "onRun",
+      "shortcut" : "fn shift a",
+      "name" : "Quick Export @1-3x",
+      "identifier" : "quick-export-all"
+    },
+    {
+      "script" : "QuickExportPDF.js",
+      "handler" : "onRun",
+      "shortcut" : "fn shift p",
+      "name" : "Quick Export PDF",
+      "identifier" : "quick-export-PDF"
+    },
+    {
+      "script" : "QuickExportSVG.js",
+      "handler" : "onRun",
+      "shortcut" : "fn shift s",
+      "name" : "Quick Export SVG",
+      "identifier" : "quick-export-SVG"
     }
   ],
   "menu" : {
@@ -40,7 +50,8 @@
         "quick-export-2x",
         "quick-export-3x",
         "quick-export-all",
-        "quick-export-PDF"
+        "quick-export-PDF",
+        "quick-export-SVG"
     ],
     "title" : "Quick Export"
   },
@@ -49,7 +60,7 @@
   "authorEmail" : "richard@gazdik.name",
   "name" : "Quick Export",
   "homepage": "http://richard.gazdik.name",
-  "version": "0.8",
+  "version": "0.9",
   "compatibleVersion": 3.5,
   "bundleVersion": 1
 }
