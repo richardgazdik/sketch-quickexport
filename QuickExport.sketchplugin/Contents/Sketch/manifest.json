@@ -5,29 +5,44 @@
       "script" : "QuickExport1x.js",
       "handler" : "onRun",
       "shortcut" : "fn shift 1",
-      "name" : "Quick Export @1x",
+      "name" : "Quick Export PNG @1x",
       "identifier" : "quick-export-1x"
     },
     {
       "script" : "QuickExport2x.js",
       "handler" : "onRun",
       "shortcut" : "fn shift 2",
-      "name" : "Quick Export @2x",
+      "name" : "Quick Export PNG @2x",
       "identifier" : "quick-export-2x"
     },
     {
       "script" : "QuickExport3x.js",
       "handler" : "onRun",
       "shortcut" : "fn shift 3",
-      "name" : "Quick Export @3x",
+      "name" : "Quick Export PNG @3x",
       "identifier" : "quick-export-3x"
     },
     {
       "script" : "QuickExportAll.js",
       "handler" : "onRun",
       "shortcut" : "fn shift a",
-      "name" : "Quick Export @1-3x",
+      "name" : "Quick Export PNG @1-3x",
       "identifier" : "quick-export-all"
+    },
+
+    {
+      "script" : "QuickClipboardPNG2x.js",
+      "handler" : "onRun",
+      "shortcut" : "command shift c",
+      "name" : "Quick Export Clipboard @2x",
+      "identifier" : "quick-clipboard-2x"
+    },
+    {
+      "script" : "QuickClipboardPNG3x.js",
+      "handler" : "onRun",
+      "shortcut" : "command shift option c",
+      "name" : "Quick Export Clipboard @3x",
+      "identifier" : "quick-clipboard-3x"
     },
     {
       "script" : "QuickExportPDF.js",
@@ -50,17 +65,23 @@
         "quick-export-2x",
         "quick-export-3x",
         "quick-export-all",
+        "quick-clipboard-2x",
+        "quick-clipboard-3x",
         "quick-export-PDF",
         "quick-export-SVG"
     ],
     "title" : "Quick Export"
   },
+  "contributors": [
+    "Richard Gazdik <richard@gazdik.name>",
+    "Jeff Bargmann <jeffbargmann@gmail.com>"
+  ],
   "identifier" : "com.richardgazdik.sketch-plugin",
-  "description": "Exports selected layers as pngs to a specified folder.",
+  "description": "Exports selected layers as pngs, to file or clipboard.",
   "authorEmail" : "richard@gazdik.name",
   "name" : "Quick Export",
   "homepage": "http://richard.gazdik.name",
-  "version": "0.9",
+  "version": "0.9.1",
   "compatibleVersion": 3.5,
   "bundleVersion": 1
 }
